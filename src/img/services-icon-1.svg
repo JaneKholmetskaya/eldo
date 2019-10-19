@@ -1,13 +1,5 @@
 <svg width="214" height="184" viewBox="0 -40 214 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g>
-	<animateTransform attributeName="transform" type="rotate" values="0 107.0 92.0; 360 107.0 92.0" calcMode="linear" begin="0s" dur="15s" repeatCount="indefinite"  />
-<circle cx="35.9833" cy="11.7705" r="2.71137" fill="#6AEDFC"/>
-<circle cx="46.3429" cy="14.4272" r="2.65722" fill="#6AEDFC"/>
-<circle cx="6.88132" cy="79.8206" r="2.30844" fill="#6AEDFC"/>
-<circle cx="205.329" cy="97.7488" r="4.25071" fill="#6AEDFC"/>
-<circle cx="176.44" cy="113.571" r="2.75527" fill="#6AEDFC"/>
-<circle cx="198.954" cy="139.706" r="2.59795" fill="#6AEDFC"/>
-</g>
+
 <g filter="url(#filter0_d)">
 <mask id="path-1-inside-1" fill="white">
 <path d="M40.3749 40.2272C40.3749 39.0988 41.0081 38.0659 42.0136 37.5539L113.578 1.11356C114.403 0.69319 115.377 0.677811 116.215 1.07189L193.883 37.578C194.935 38.0726 195.607 39.1305 195.607 40.2931V136.507C195.607 137.677 194.927 138.741 193.864 139.231L116.196 175.082C115.368 175.464 114.412 175.449 113.597 175.042L42.0331 139.256C41.0168 138.748 40.3749 137.709 40.3749 136.573V40.2272Z"/>
