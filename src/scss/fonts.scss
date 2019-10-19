@@ -1,0 +1,7 @@
+@import "bourbon";
+
+//Подключение шрифтов
+@include font-face("AvenirBook", "../fonts/Avenir/Avenir-Book/Avenir-Book", $file-formats: eot woff ttf);
+@include font-face("AvenirHeavy", "../fonts/Avenir/Avenir-Heavy/Avenir-Heavy", $file-formats: eot woff ttf);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat/montserrat", $file-formats: woff2 woff ttf);
+@include font-face("MontserratBold", "../fonts/Montserrat/MontserratBold/montserratbold", $file-formats: woff2 woff ttf);

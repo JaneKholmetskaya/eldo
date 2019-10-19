@@ -1,0 +1,86 @@
+<svg width="1440" height="317" viewBox="0 0 1440 317" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke-dasharray="1848" stroke-dashoffset="1848">
+        <animate id="a1" attributeName="stroke-dashoffset" begin="indefinite" values="1848; 0" dur="6s" repeatCount="1" calcMode="linear" />
+        <animate id="a2" attributeName="stroke-dashoffset" begin="indefinite" values="-1848; 0" dur="6s" repeatCount="1" calcMode="linear" />
+        <g filter="url(#filter_info_line_10_df)">
+            <path d="M-4.36703 158.849C10.9228 160.367 49.2083 165.682 80.0313 174.792C118.56 186.179 169.932 188.456 190.114 150.878C210.296 113.299 267.172 50.668 296.528 107.605C325.883 164.543 347.9 297.777 402.942 295.499C457.983 293.222 478.165 230.59 489.174 197.567C500.182 164.543 536.876 93.941 624.943 122.409C713.009 150.878 685.489 195.288 780.894 158.849C876.3 122.409 887.308 162.266 907.49 188.457C927.672 214.648 982.713 287.528 1032.25 197.567C1081.79 107.605 1127.66 85.9698 1184.53 122.409C1241.41 158.849 1232.24 174.792 1283.61 174.792C1334.98 174.792 1342.32 158.849 1382.68 158.849C1414.97 158.849 1435.28 158.849 1441.39 158.849" stroke="url(#paint_info_line_10_linear)" stroke-width="16" stroke-linecap="round" />
+        </g>
+        <g filter="url(#filter_info_line_11_d)">
+            <path d="M-7.58975 163.849C7.7001 165.367 45.9856 170.682 76.8086 179.792C115.337 191.179 166.71 193.456 186.891 155.878C207.073 118.299 263.95 55.668 293.305 112.605C322.661 169.543 344.677 302.777 399.719 300.499C454.761 298.222 474.943 235.59 485.951 202.567C496.959 169.543 533.654 98.941 621.72 127.409C709.787 155.878 682.266 200.288 777.671 163.849C873.077 127.409 884.085 167.266 904.267 193.457C924.449 219.648 979.491 292.528 1029.03 202.567C1078.57 112.605 1124.43 90.9698 1181.31 127.409C1238.19 163.849 1229.01 179.792 1280.38 179.792C1331.76 179.792 1339.1 163.849 1379.46 163.849C1411.75 163.849 1432.05 163.849 1438.17 163.849" stroke="url(#paint_info_line_11_linear)" stroke-width="16" stroke-linecap="round" />
+        </g>
+    </g>
+    <g stroke-dasharray="2522" stroke-dashoffset="2522">
+        <animate attributeName="stroke-dashoffset" begin="a1.begin + 1s" values="2522; 0" dur="5s" repeatCount="1" calcMode="linear" />
+        <animate attributeName="stroke-dashoffset" begin="a2.begin + 1s" values="-2522; 0" dur="5s" repeatCount="1" calcMode="linear" />
+        <set attributeName="stroke-dashoffset" begin="a1.begin" to="2522" dur="1s" />
+        <set attributeName="stroke-dashoffset" begin="a2.begin" to="-2522" dur="1s" />
+        <g filter="url(#filter_info_line_12_df)">
+            <path d="M-103.49 158.746C-61.882 157.042 33.3408 150.834 81.3708 139.633C141.408 125.631 174.156 108.518 194.168 127.187C214.181 145.856 276.038 246.98 297.869 206.53C319.701 166.08 339.331 58.8375 397.965 61.4489C456.598 64.0603 485.72 195.118 494.466 233.802C503.212 272.487 548.213 282.897 561.65 233.802C575.087 184.708 606.846 51.003 619.062 30.1116C631.277 9.22029 662.134 14.192 670.366 30.1116C680.796 50.2818 728.019 258.563 742.436 283.419C752.671 301.066 787.625 298.351 794.962 267.751C800.245 245.715 816.949 74.5058 873.139 80.2509C929.33 85.996 936.013 182.681 953.76 206.53C971.778 230.742 1024.61 231.191 1041.71 190.453C1064.15 136.998 1070.79 99.1151 1123.36 116.034C1157.55 127.034 1154.09 185.752 1209.06 190.453C1264.03 195.153 1319 162.25 1372.74 162.249C1415.74 162.249 1439.52 162.249 1446.04 162.249" stroke="url(#paint_info_line_12_linear)" stroke-opacity="0.5" stroke-width="16" stroke-linecap="round" />
+        </g>
+        <g filter="url(#filter_info_line_13_d)">
+            <path d="M-114.342 158.746C-72.5678 157.042 23.0366 150.834 71.2591 139.633C131.537 125.631 164.416 108.518 184.509 127.187C204.601 145.856 266.706 246.98 288.625 206.53C310.545 166.08 330.254 58.8375 389.122 61.4489C447.99 64.0603 477.228 195.118 486.009 233.802C494.79 272.487 539.972 282.897 553.463 233.802C566.953 184.708 598.84 51.003 611.105 30.1116C623.369 9.22029 654.349 14.192 662.614 30.1116C673.086 50.2818 720.499 258.563 734.973 283.419C745.25 301.066 780.343 298.351 787.71 267.751C793.014 245.715 809.785 74.5058 866.201 80.2509C922.616 85.996 929.326 182.681 947.145 206.53C965.234 230.742 1018.28 231.191 1035.45 190.453C1057.98 136.998 1064.64 99.1151 1117.43 116.034C1151.75 127.034 1148.28 185.752 1203.47 190.453C1258.66 195.153 1313.85 162.25 1367.81 162.249C1410.98 162.249 1434.85 162.249 1441.39 162.249" stroke="url(#paint_info_line_13_linear)" stroke-width="16" stroke-linecap="round" />
+        </g>
+    </g>
+    <defs>
+        <filter id="filter_info_line_10_df" x="-19.3676" y="69.7075" width="1475.76" height="241.821" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+            <feGaussianBlur stdDeviation="3.5" result="effect2_foregroundBlur" />
+        </filter>
+        <filter id="filter_info_line_11_d" x="-19.5903" y="81.7075" width="1469.76" height="234.821" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter_info_line_12_df" x="-119.49" y="0.246338" width="1581.53" height="314.083" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="8" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+            <feGaussianBlur stdDeviation="4" result="effect2_foregroundBlur" />
+        </filter>
+        <filter id="filter_info_line_13_d" x="-126.342" y="8.24634" width="1579.74" height="304.083" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="6" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+
+        <linearGradient id="paint_info_line_10_linear" x1="-4.36704" y1="155.782" x2="1474.72" y2="171.815" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8ACACD" />
+            <stop offset="0.0001" stop-color="#AED1D2" />
+            <stop offset="0.463542" stop-color="#DAEBEF" />
+            <stop offset="1" stop-color="#93A7D2" />
+        </linearGradient>
+
+        <linearGradient id="paint_info_line_11_linear" x1="-7.58975" y1="160.782" x2="1471.49" y2="176.815" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8ACACD" />
+            <stop offset="0.0001" stop-color="#AED1D2" />
+            <stop offset="0.463542" stop-color="#DAEBEF" />
+            <stop offset="1" stop-color="#93A7D2" />
+        </linearGradient>
+        <linearGradient id="paint_info_line_12_linear" x1="-140.887" y1="173.029" x2="1445.68" y2="137.317" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6AEDFC" />
+            <stop offset="1" stop-color="#5D89F0" />
+        </linearGradient>
+        <linearGradient id="paint_info_line_13_linear" x1="-151.889" y1="173.029" x2="1441.03" y2="137.03" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6AEDFC" />
+            <stop offset="1" stop-color="#5D89F0" />
+        </linearGradient>
+    </defs>
+</svg>
