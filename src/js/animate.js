@@ -27,6 +27,41 @@ function initAnimmation() {
       }
     );
   });
+  // $(" [class*='analitic-section-'] [class*='icon-']").map((i, el) => {
+  //   console.log(el);
+  //   let start = randomStart();
+  //   el.animate(
+  //     [
+  //       {
+  //         transform: "transform(50px)"
+  //       },
+  //       {
+  //         transform: "transform(100px)"
+  //       }
+  //     ],
+  //     {
+  //       iterations: Infinity
+  //     }
+  //   );
+  // });
+
+  $(".icons-wrapper .circle_animation:nth-child(2n+1)").map((i, el) => {
+    let start = randomStart();
+    el.animate(
+      [
+        {
+          transform: "rotate(" + start + "deg)"
+        },
+        {
+          transform: "rotate(" + (start - 360) + "deg)"
+        }
+      ],
+      {
+        duration: randomSeconds(),
+        iterations: Infinity
+      }
+    );
+  });
 
   $(".icons-wrapper .circle").map(
     (i, el) => (el.style.left = randomPosition())
@@ -55,3 +90,15 @@ function initAnimmation() {
 
   randomSize();
 }
+// $("logo-wrapper .logo").click(function() {
+//   console.log();
+//   $("html, body").animate({ scrollTop: $("#header").offset().top }, 1000);
+//   // $("html, body").animate({ scrollTop: 0 }, 600);
+// });
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 150) {
+    $(".nav-inner-wraper").addClass("glide");
+  } else {
+    $(".nav-inner-wraper").removeClass("glide");
+  }
+});

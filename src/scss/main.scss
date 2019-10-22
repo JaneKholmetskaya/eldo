@@ -2,13 +2,31 @@
 @import "media_mixins";
 @import "vars_and_mixins";
 
+
+// @keyframes translating {
+//     0%   { transform: translate(0, 0); }
+
+//     100%  { transform: translate(30px); }
+
+  
+//   }
+  
+// @keyframes logo {
+//     0%   { left: 50%; top: 50% }
+
+
+//     100% { left: 10%; top:10%}
+//   }
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
-
+.glide{
+    width: 100vw;
+    background: red;
+}
 .analitic-sections {
     position: relative;
 }
@@ -21,7 +39,20 @@
     stroke: #3202F2;
     //    transform-origin: 47% 34px;
 }
+.logoLoad{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-right: -30%;
+    transform: translate(-50%, -50%);
+    img{
+        width: 30vw;
+        height: 30vh;
+    }
 
+
+    // animation: logo 2s linear 3s forwards;
+}
 .icons-wrapper {
     width: 100%;
     height: 100%;
@@ -161,6 +192,7 @@ nav {
 }
 
 .logo {
+    cursor: pointer;
     img {
         display: block;
     }
@@ -188,22 +220,22 @@ nav {
 
     .title {
         font-weight: bold;
-        font-size: 60px;
+        font-size: 80px!important;
 
         @include mobile_md {
-            font-size: 36px;
+            font-size: 36px!important;
         }
 
         @include mobile {
-            font-size: 48px;
+            font-size: 48px!important;
         }
 
         @include desktop {
-            font-size: 60px;
+            font-size: 60px!important;
         }
 
         @include desktop_lg {
-            font-size: 75px;
+            font-size: 75px!important;
         }
     }
 
@@ -939,8 +971,16 @@ nav {
           }
         }
     }
-
-
+    & [class*="icon-"] img{
+        transform: translate(0, 0); 
+        transition:transform 0.5s linear;
+        transition-property: transform;
+        position: relative;
+        z-index: 5;
+    }
+    & [class*="icon-"] img:hover{
+        transform: translate(30px); 
+    }
     &.analitic-section-1 {
         .circle {
           background-color: #3202f2;
@@ -1847,7 +1887,7 @@ nav {
     &:after {
         content: '';
         position: absolute;
-        z-index: 5;
+        // z-index: 5;
     }
 
     &:before {
@@ -1858,6 +1898,7 @@ nav {
         background: url(../img/figure-section-bg.svg);
         background-position: center top;
         background-repeat: repeat-x;
+
     }
 
     &:after {
@@ -1890,7 +1931,7 @@ nav {
         }
 
         p {
-            width: 50%;
+            width: 60%;
             letter-spacing: 0.095em;
             opacity: 0.7;
         }
@@ -2172,7 +2213,7 @@ nav {
         /* Fix for long control shadow */
         margin-bottom: -10%;
         overflow: hidden;
-        padding: 5.6% 9.75% 5% 10.6%;
+        padding: 3.6% 9.75% 5% 10.6%;
         position: relative;
         z-index: 10;
       }
@@ -2195,7 +2236,7 @@ nav {
       }
 
       .control {
-        background: url('/img/slider-bg.svg') center/cover no-repeat;
+        background: url('../img/slider-bg.svg') center/cover no-repeat;
         height: 268px;
         position: relative;
         width: 268px;
@@ -2234,7 +2275,7 @@ nav {
       }
 
       .control .rs-handle::before {
-        background: url('/img/slider-label.svg') center/100% no-repeat;
+        background: url('../img/slider-label.svg') center/100% no-repeat;
         content: '';
         display: block;
         height: 48px;
@@ -2250,6 +2291,7 @@ nav {
         position: relative;
         z-index: 10;
         max-height: 40%;
+        // margin-top: 7%;
       }
 
       .stage svg {
@@ -2286,7 +2328,7 @@ nav {
 
     form {
         padding: 10% 4% 0 4%;
-        height: 90%;
+        height: 95%;
 
         @include mobile {
             padding: 10% 0 0 0;
@@ -2378,7 +2420,7 @@ nav {
                         transition: all 0.4s $ease-out-sine;
 
                         img, object {
-                            width: 80%;
+                            width: 55%;
                             height: fit-content;
                             display: block;
                             margin: 16% 0 23% 0;
@@ -2530,8 +2572,10 @@ nav {
 
 .circle_animation{
     position: absolute;
-    top: 31%;
-    width: 100%;
+    top: 32%;
+    left: 5%;
+    width: 90%;
+
     height: 1vh;
 }
 .circle{
@@ -2711,3 +2755,5 @@ footer {
         }
     }
 }
+
+

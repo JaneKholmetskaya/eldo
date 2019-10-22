@@ -6,6 +6,8 @@ function initFullpage() {
         $('#fullpage').fullpage({
             controlArrows: false,
             fitToSection: false,
+
+ 
             afterLoad: function(fromScreen, toScreen) {
                 switch (toScreen.index) {
                     case 1:
@@ -56,6 +58,7 @@ function initFullpage() {
                 //$('.fp-tableCell', toScreen.item)[0].innerHTML = sections[toScreen.index];
                 console.log('ttt', fromScreen, toScreen)
                 $('content', toScreen.item).show();
+                
                 switch (fromScreen.index) {
                     case 0:
                         if (toScreen.index == 1) {

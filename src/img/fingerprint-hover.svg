@@ -61,7 +61,7 @@
             <animate id="p19" attributeName="stroke" begin="ph19.mouseenter" values="#1D1D1D; #20D2C8; #1D1D1D" dur="1s" repeatCount="1" fill="freeze" calcMode="linear" />
         </path>
     </g>
-    <g stroke="transparent" stroke-width="30" stroke-linecap="round">
+    <g stroke="transparent" stroke-width="200" stroke-linecap="round">
         <path id="ph0" d="M9.5174 229.188C48.7378 131.846 193.522 -46.394 458.898 19.3827" />
         <path id="ph1" d="M121.508 155.473C181.52 82.2299 353.428 -25.697 560.965 128.538" />
         <path id="ph2" d="M55.2222 534.233C30.2472 462.023 -2.43736 298.383 66.6238 221.503" />
@@ -95,3 +95,6 @@
         </filter>
     </defs>
 </svg>
+
+
+
