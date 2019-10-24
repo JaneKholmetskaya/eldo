@@ -3,12 +3,22 @@ function initFullpage() {
     var sections = [];
 
     return new Promise(function(resolve, reject) {
-        $('#fullpage').fullpage({
-            controlArrows: false,
-            fitToSection: false,
+        var a = $('#fullpage').fullpage({
+            anchors: [
+                "headerPage",
+                "how",
+                "analitic",
+                "mapPage",
+                "groups",       
+                "use",
+                "contacts"
+              ],
+              controlArrows: false,
+              resetSliders: true,
 
  
             afterLoad: function(fromScreen, toScreen) {
+                // console.log(fromScreen, toScreen)
                 switch (toScreen.index) {
                     case 1:
                         if (fromScreen.index == 0) {
@@ -58,8 +68,9 @@ function initFullpage() {
                 //$('.fp-tableCell', toScreen.item)[0].innerHTML = sections[toScreen.index];
                 console.log('ttt', fromScreen, toScreen)
                 $('content', toScreen.item).show();
-                
+                // console.log(fromScreen);
                 switch (fromScreen.index) {
+                   
                     case 0:
                         if (toScreen.index == 1) {
                             $('.info-section > div', toScreen.item).hide();
@@ -514,7 +525,9 @@ function initFullpage() {
                     $('content', section).hide();
                 });
                 resolve();
-            }
+            },
+  
+
         });
 
         $('.nextPage').click(function(e) {
@@ -525,6 +538,64 @@ function initFullpage() {
             e.preventDefault()
             fullpage_api.moveSectionUp();
         });
+        
+            $(".scrolled li a").click(function(e){
+            //     $('#fullpage .section').map(function(i, section) {
+  
+            //         $('.content', section).hide();
+            //     });
+                var type = $(this).attr("href").replace('#', '');
+                var secMap = {
+                    how : '',
+                    analitic: 'analitic-',
+                    mapPage: 'map-'
+                }
+                console.log(type);
+                fullpage_api.moveTo(type);
+                $('[data-anchor="'+type+'"]').find('.content').removeClass(secMap[type]+'section-2, '+secMap[type]+'section-3, '+secMap[type]+'section-4').addClass(secMap[type]+'section-1');
+                $('[data-anchor="'+type+'"]').find('.content').find('.'+secMap[type]+'section-2, .'+secMap[type]+'section-3, .'+secMap[type]+'section-4').hide();
+                $('[data-anchor="'+type+'"]').find('.content').find('.'+secMap[type]+'section-1').show();
+
+                })
+                        
+            // $(".scrolled li a").click(function(e){
+            //     $('#fullpage .section').map(function(i, section) {
+  
+            //         $('.content', section).hide();
+            //     });
+              
+            //     $('#fullpage .section').map(function(i, section) {
+  
+            //         $('.content', section).show();
+            //     });
+            //     if($(this).attr("href") == "#how"){
+            //         console.log('click',$(this).attr("href"))
+            //         // fullpage_api.moveTo("how", 1);
+            //         $('[data-anchor="how"]').find('.content').removeClass('section-2, section-3').addClass('section-1');
+            //         $('[data-anchor="how"]').find('.content').find('.section-2, .section-3').hide();
+            //         $('[data-anchor="how"]').find('.content').find('.section-1').show();
+            //     }else if($(this).attr("href") == "#analitic"){
+            //         console.log('click',$(this).attr("href"))
+            //         // fullpage_api.moveTo("analitic", 1);
+            //         $('[data-anchor="analitic"]').find('.content').removeClass('analitic-section-2, analitic-section-3, analitic-section-4').addClass('analitic-section-1');
+            //         $('[data-anchor="analitic"]').find('.content').find('.analitic-section-2, .analitic-section-3, .analitic-section-4').hide();
+            //         $('[data-anchor="analitic"]').find('.content').find('.analitic-section-1').show();
+            //     }else if($(this).attr("href") == "#mapPage"){
+            //         console.log('click',$(this).attr("href"))
+            //         // fullpage_api.moveTo("mapPage", 1);
+            //     $('[data-anchor="mapPage"]').find('.content').removeClass('map-section-2, map-section-3').addClass('map-section-1');
+            //     $('[data-anchor="mapPage"]').find('.content').find('.map-section-2, .map-section-3').hide();
+            //     $('[data-anchor="mapPage"]').find('.content').find('.map-section-1').show();
+            //     }
+            
+             
+
+            
+
+                    
+            //     })
+
+
     });
 
 }

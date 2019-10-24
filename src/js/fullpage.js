@@ -626,6 +626,7 @@
       FP.moveSectionDown = moveSectionDown;
       FP.silentMoveTo = silentMoveTo;
       FP.moveTo = moveTo;
+      FP.fireCallback = fireCallback;
       FP.moveSlideRight = moveSlideRight;
       FP.moveSlideLeft = moveSlideLeft;
       FP.fitToSection = fitToSection;
