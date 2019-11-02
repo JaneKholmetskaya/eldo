@@ -3,13 +3,23 @@
 @import "vars_and_mixins";
 
 
-// @keyframes translating {
-//     0%   { transform: translate(0, 0); }
+$randomSeconds: floor(15000 + random() * 125000);
 
-//     100%  { transform: translate(30px); }
+
+@keyframes transform {
+    0%   { transform: rotate(0deg) }
+
+    100%  { transform: rotate(360deg) }
 
   
-//   }
+  }
+  @keyframes transform2 {
+    0%   { transform: rotate(0deg) }
+
+    100%  { transform: rotate(-360deg) }
+
+  
+  }
   
 // @keyframes logo {
 //     0%   { left: 50%; top: 50% }
@@ -23,9 +33,51 @@
     list-style: none;
     text-decoration: none;
 }
+.circle_animation.transfrorm{
+    animation: transform2 40s linear 0s infinite;
+}
+
+.circle_animation.transfrorm:nth-child(3n+1){
+    animation: transform 15s linear 0.3s infinite;
+    .circle{
+        left: 19%;
+        width: 0.7vh;
+        height: 0.7vh;
+    }
+       
+    .circle:nth-child(2n){
+        left: 12%;
+        width: 0.7vh;
+        height: 0.7vh;
+    }
+}
+.circle_animation.transfrorm:nth-child(3n+5){
+    animation: transform2 20s linear infinite;
+    .circle{
+        left: 15%;
+        width: 0.436563vh;
+        height: 0.436563vh;
+    }
+
+}
+.circle_animation.transfrorm:nth-child(5n+1){
+    animation: transform 25s linear 0.5s infinite;
+}
+.circle_animation.transfrorm:nth-child(2n+1){
+    animation: transform2 30s linear 0.1s infinite;
+}
+
+
 .glide{
-    width: 100vw;
-    background: red;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0),);
+    // rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+    .nav-inner-wraper{
+        margin: 2% 5%;
+        // padding: 0 10%;
+
+    }
 }
 .analitic-sections {
     position: relative;
@@ -48,6 +100,10 @@
     img{
         width: 30vw;
         height: 30vh;
+    }
+    @include tablet{
+        top: 20%;
+        left: 50%
     }
 
 
@@ -126,13 +182,22 @@ header {
             position: relative;
             z-index: 60;
         }
+        @include tablet{
+            z-index: 1;
+        }
+        @include desktop{
+            height: 65%;
+        }
+        @include desktop_xl{
+            height: 75%;
+        }  
     }
 }
 
 
 nav,
 .mob-menu {
-    width: 90%;
+    // width: 90%;
     position: fixed;
     left: 0;
     right: 0;
@@ -141,21 +206,30 @@ nav,
     z-index: 100;
 }
 
+
 .nav-inner-wraper,
 .mob-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.7%;
+    // margin-top: 2.7%;
+    margin: 2.7% 5% 2.7%;
     height: fit-content;
+   
 
     @include mobile {
         margin-top: 15.7%;
+        
     }
 
     @include tablet {
         margin-top: 8.7%;
+        margin-bottom: 8%;
     }
+}
+.nav-inner-wraper{
+    margin-top: 2.7%;
+    transition: margin 0.5s;
 }
 
 nav {
@@ -204,6 +278,7 @@ nav {
         width: fit-content;
         margin-left: 10.6%;
 
+
         @include desktop {
             margin-left: 5%;
         }
@@ -220,7 +295,7 @@ nav {
 
     .title {
         font-weight: bold;
-        font-size: 80px!important;
+        font-size: 60px!important;
 
         @include mobile_md {
             font-size: 36px!important;
@@ -337,7 +412,8 @@ nav {
     }
 }
 
-nav {
+.header-nav {
+    
     @include tablet {
         opacity: 0;
         visibility: hidden;
@@ -346,7 +422,7 @@ nav {
     }
 
     .nav-inner-wraper {
-
+// padding: 0 10%;
         @include tablet {
             display: none;
         }
@@ -502,11 +578,16 @@ nav {
         z-index: 4;
 
         @include mobile {
-            margin-top: 25.2%;
+            margin-top: 32.2%;
+            position: relative;
+            z-index: 60;
         }
 
         @include tablet {
             margin-top: 18.2%;
+            position: relative;
+            z-index: 60;
+
         }
 
         .small-title {
@@ -572,7 +653,7 @@ nav {
             }
 
             svg, object {
-                padding-left: 106px;
+                // padding-left: 106px;
                 padding-top: 3px;
             }
         }
@@ -620,20 +701,36 @@ nav {
         bottom: 0;
         height: 80%;
 
+        @include tablet{
+            z-index: 1;
+            &:before{
+                background: rgba(255,255,255,0.1);
+            }
+        }
+        @include desktop{
+            height: 65%;
+        }
+        @include desktop_xl{
+            height: 75%;
+        }
+        // @include tablet {
+        //     height: 45%;
+        // }
+
         &:hover {
             &:before {
                 opacity: 1;
                 visibility: visible;
             }
 
-            &:after {
-                opacity: 0;
-                visibility: hidden;
-            }
+            // &:after {
+            //     opacity: 0;
+            //     visibility: hidden;
+            // }
         }
 
-        &:before,
-        &:after {
+    
+        &:before {
             content: '';
             position: absolute;
             right: 0;
@@ -650,12 +747,7 @@ nav {
             filter: blur(66px);
         }
 
-        &:before {
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.5s linear 0.2s;
-            z-index: 10;
-        }
+        
 
         &:after {
             opacity: 1;
@@ -713,6 +805,8 @@ nav {
 
         &:nth-child(1) {
             margin-right: 54px;
+            z-index: 10;
+
 
             &:before {
                 right: 0;
@@ -742,6 +836,7 @@ nav {
 
     }
 }
+
 
 .info-section,
 .analitic-section {
@@ -811,7 +906,7 @@ nav {
 
     .text-block {
         position: absolute;
-        top: 9%;
+        top: 11%;
         right: 11%;
         align-items: flex-end;
         text-align: right;
@@ -883,7 +978,7 @@ nav {
 
     .info-section-line {
         position: absolute;
-        top: 56%;
+        top: 48%;
         left: 0;
         width: 100%;
         height: fit-content;
@@ -960,14 +1055,15 @@ nav {
         .circle_animation {
           position: absolute;
           top: 50%;
-
-          width: 100%;
+            left: 0%;
+          width: 105%;
           height: 1vh;
 
 
           .circle {
             position: absolute;
             border-radius: 100%;
+            z-index: 10;
           }
         }
     }
@@ -989,7 +1085,7 @@ nav {
             .icon-1 {
                 left: 0.3%;
                 top: 6%;
-                height: 22.5%;
+                height: 17.5%;
 
                 @include tablet {
                     display: none;
@@ -1002,7 +1098,7 @@ nav {
             .icon-2 {
                 left: 13.5%;
                 top: 25.9%;
-                height: 16.7%;
+                height: 12.7%;
 
                 @include tablet {
                     left: -4.5%;
@@ -1010,9 +1106,9 @@ nav {
             }
 
             .icon-3 {
-                left: 18.8%;
-                top: 1.5%;
-                height: 34.7%;
+                left: 21.8%;
+                top: 6.5%;
+                height: 27.7%;
 
                 @include mobile {
                     display: none;
@@ -1029,7 +1125,7 @@ nav {
             .icon-4 {
                 left: 0.9%;
                 bottom: 34%;
-                height: 27%;
+                height: 23%;
 
                 @include mobile {
                     left: 35.9%;
@@ -1048,7 +1144,7 @@ nav {
             .icon-5 {
                 left: 16%;
                 bottom: 14.6%;
-                height: 17.7%;
+                height: 13.7%;
 
                 @include tablet {
                     left: -5%;
@@ -1060,7 +1156,7 @@ nav {
             .icon-6 {
                 left: 1%;
                 bottom: 5%;
-                height: 22%;
+                height: 20%;
 
                 @include tablet {
                     display: none;
@@ -1070,7 +1166,7 @@ nav {
             .icon-7 {
                 left: 23%;
                 bottom: 25.7%;
-                height: 32%;
+                height: 27%;
 
                 @include tablet {
                     left: 15%;
@@ -1082,7 +1178,7 @@ nav {
             .icon-8 {
                 left: 29%;
                 bottom: 8%;
-                height: 17%;
+                height: 14%;
 
                 @include tablet {
                     left: 7%;
@@ -1094,7 +1190,7 @@ nav {
             .icon-9 {
                 left: 43.5%;
                 bottom: 5%;
-                height: 29%;
+                height: 26%;
 
                 @include mobile {
                     left: -16.5%;
@@ -1110,7 +1206,7 @@ nav {
             .icon-10 {
                 left: 57%;
                 top: 2%;
-                height: 16%;
+                height: 13%;
 
                 @include mobile {
                     bottom: 29%;
@@ -1126,7 +1222,7 @@ nav {
             .icon-11 {
                 left: 40.2%;
                 top: 14%;
-                height: 24%;
+                height: 21%;
 
                 @include mobile {
                     left: 71.2%;
@@ -1165,7 +1261,7 @@ nav {
             .icon-2 {
                 left: 4.6%;
                 top: 7.4%;
-                height: 30.3%;
+                height: 27.3%;
 
                 @include mobile {
                     display: none;
@@ -1180,7 +1276,7 @@ nav {
             .icon-3 {
                 left: 19.5%;
                 top: 28%;
-                height: 34.9%;
+                height: 29.9%;
 
                 @include mobile {
                     left: -3.5%;
@@ -1264,7 +1360,7 @@ nav {
             .icon-8 {
                 left: 35%;
                 bottom: 13%;
-                height: 27.5%;
+                height: 23.5%;
 
                 @include tablet {
                     left: 63%;
@@ -1319,7 +1415,7 @@ nav {
             .icon-1 {
                 left: 0.3%;
                 top: 25%;
-                height: 21%;
+                height: 19%;
 
                 @include mobile {
                     top: 82%;
@@ -1337,7 +1433,7 @@ nav {
             .icon-2 {
                 left: 0.5%;
                 bottom: 21.2%;
-                height: 29%;
+                height: 27%;
 
                 @include mobile {
                     left: -6.5%;
@@ -1358,7 +1454,7 @@ nav {
             .icon-3 {
                 left: 15.2%;
                 top: 27.4%;
-                height: 24.8%;
+                height: 21.8%;
 
                 @include tablet {
                     display: none;
@@ -1374,7 +1470,7 @@ nav {
             .icon-4 {
                 left: 14.4%;
                 top: 11.2%;
-                height: 15.2%;
+                height: 13.2%;
 
                 @include tablet {
                     display: none;
@@ -1384,7 +1480,7 @@ nav {
             .icon-5 {
                 left: 0;
                 top: 0.2%;
-                height: 24.4%;
+                height: 21.4%;
 
                 @include mobile {
                     top: 30.2%;
@@ -1400,7 +1496,7 @@ nav {
             .icon-6 {
                 left: 0;
                 bottom: 4%;
-                height: 18.9%;
+                height: 15.9%;
 
                 @include tablet {
                     display: none;
@@ -1414,7 +1510,7 @@ nav {
             .icon-7 {
                 left: 15.2%;
                 bottom: 6.9%;
-                height: 19.4%;
+                height: 16.4%;
 
                 @include mobile {
                     left: 50.2%;
@@ -1456,7 +1552,7 @@ nav {
             .icon-9 {
                 left: 22.3%;
                 top: 17px;
-                height: 14.8%;
+                height: 11.8%;
 
                 @include tablet {
                     display: none;
@@ -1466,7 +1562,7 @@ nav {
             .icon-10 {
                 left: 27.4%;
                 top: 90px;
-                height: 28%;
+                height: 25%;
 
                 @include mobile {
                     top: 36%;
@@ -1483,7 +1579,7 @@ nav {
             .icon-11 {
                 left: 43.5%;
                 top: 0.3%;
-                height: 27.4%;
+                height: 23.4%;
 
                 @include tablet {
                     display: none;
@@ -1499,7 +1595,7 @@ nav {
             .icon-12 {
                 left: 26.5%;
                 bottom: 12%;
-                height: 19%;
+                height: 15%;
 
                 @include tablet {
                     display: none;
@@ -1518,7 +1614,7 @@ nav {
             .icon-13 {
                 left: 36.3%;
                 bottom: 6.1%;
-                height: 32.4%;
+                height: 25.4%;
 
                 @include tablet {
                     display: none;
@@ -1538,7 +1634,7 @@ nav {
             .icon-14 {
                 left: 58%;
                 bottom: 11.4%;
-                height: 15%;
+                height: 13%;
 
                 @include tablet {
                     display: none;
@@ -1559,7 +1655,7 @@ nav {
             .icon-1 {
                 left: 5.8%;
                 bottom: 40.2%;
-                height: 16%;
+                height: 13%;
 
                 @include mobile {
                     left: -5.2%;
@@ -1577,7 +1673,7 @@ nav {
             .icon-2 {
                 left: 1.2%;
                 bottom: 13%;
-                height: 23%;
+                height: 20%;
 
                 @include mobile {
                     left: -12.8%;
@@ -1595,7 +1691,7 @@ nav {
             .icon-3 {
                 left: 18%;
                 bottom: 22%;
-                height: 17%;
+                height: 13%;
 
                 @include mobile {
                     left: 34%;
@@ -1611,7 +1707,7 @@ nav {
             .icon-4 {
                 left: 19.4%;
                 top: 30.2%;
-                height: 31.7%;
+                height: 27.7%;
 
                 @include mobile {
                     left: 53.4%;
@@ -1628,7 +1724,7 @@ nav {
             .icon-5 {
                 left: 4.5%;
                 top: 8%;
-                height: 28.5%;
+                height: 24.5%;
 
                 @include mobile {
                     left: 11.5%;
@@ -1646,7 +1742,7 @@ nav {
             .icon-6 {
                 left: 25%;
                 top: 7.6%;
-                height: 17.5%;
+                height: 13.5%;
 
                 @include mobile {
                     display: none;
@@ -1662,7 +1758,7 @@ nav {
             .icon-7 {
                 left: 25%;
                 bottom: 7.3%;
-                height: 14%;
+                height: 11%;
 
                 @include tablet {
                     left: 35%;
@@ -1674,7 +1770,7 @@ nav {
             .icon-8 {
                 left: 35%;
                 bottom: 10%;
-                height: 25.3%;
+                height: 23.3%;
 
                 @include mobile {
                     left: 63%;
@@ -1692,7 +1788,7 @@ nav {
             .icon-9 {
                 left: 36.6%;
                 top: 16.5%;
-                height: 25%;
+                height: 22%;
 
                 @include mobile {
                     display: none;
@@ -1708,7 +1804,7 @@ nav {
             .icon-10 {
                 left: 56%;
                 bottom: 1.2%;
-                height: 17%;
+                height: 13%;
 
                 @include tablet {
                     display: none;
@@ -1718,7 +1814,7 @@ nav {
             .icon-11 {
                 left: 49.6%;
                 top: 4.5%;
-                height: 15.8%;
+                height: 13.8%;
 
                 @include mobile {
                     display: none;
@@ -2213,9 +2309,12 @@ nav {
         /* Fix for long control shadow */
         margin-bottom: -10%;
         overflow: hidden;
-        padding: 3.6% 9.75% 5% 10.6%;
+        padding: 1.8% 9.75% 5% 10.6%;
+        // padding: 0% 9.75% 5% 10.6%;
         position: relative;
         z-index: 10;
+        margin-top: 1.2%;
+
       }
 
       .about {
@@ -2244,7 +2343,7 @@ nav {
 
       .control::before {
         border-radius: 50%;
-        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.06) 10%, rgba(255, 255, 255, 0) 70%);
+        // background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.06) 10%, rgba(255, 255, 255, 0) 70%);
         content: '';
         height: 200%;
         left: -150%;
@@ -2252,6 +2351,7 @@ nav {
         top: -60%;
         width: 300%;
         z-index: -1;
+
       }
 
       .control .rs-path-color,
@@ -2284,20 +2384,54 @@ nav {
         top: -1px;
         transform: rotate(-90deg);
         width: 70px;
+        @include tablet {
+            height: 27px;
+            left: -16px;
+            top: -2px;
+            transform: rotate(-90deg);
+            width: 40px;
+        }
       }
-
+      @include tablet {
+        .full .rs-bar{
+            top: 58%;
+        }
+    }
       .stage {
         margin: 1.75% 2.084% 0;
         position: relative;
         z-index: 10;
-        max-height: 40%;
+        max-height: 50%;
         // margin-top: 7%;
+        // min-height: 50vh;
+        &.mobilepage {
+            display: none;
+           
+            svg {
+                margin:0 auto;
+                display: block;
+                max-height: 100%;
+                max-width: 40%;
+        
+              }
+            @include tablet {
+                display: block;
+                height: 100vh;
+            }
+        }
+        &.fullpage{
+  
+            @include tablet {
+                display: none;
+            }
+        }      
       }
 
       .stage svg {
         margin: auto;
         max-height: 60%;
         max-width: 100%;
+
       }
 
       .circle,
@@ -2360,23 +2494,23 @@ nav {
                 height: 100%;
 
                 @include mobile_sm {
-                    margin: 3% 1% 3% 1%;
+                    margin: 3% 1% 4% 1%;
                     width: 47%;
                 }
 
                 @include mobile_md {
-                    margin: 3% 2% 3% 2%;
+                    margin: 3% 2% 4% 2%;
                     width: 44%;
                 }
 
                 @include mobile {
-                    margin: 3% 4% 3% 4%;
-                    width: 39%;
+                    margin: 3% 4% 4% 4%;
+                    width: 50%;
                     height: 272px;
                 }
 
                 @include tablet {
-                    margin: 3% 8% 3% 8%;
+                    margin: 3% 8% 4% 8%;
                     width: 31%;
                     height: 374px;
                 }
@@ -2389,10 +2523,16 @@ nav {
                     display: block;
                     box-sizing: border-box;
                 }
+                
 
                 label {
                     position: relative;
-
+                    min-height: 400px;
+               
+                    
+                @include mobile {
+                    min-height: auto;
+                }
                     input {
                         &[type="checkbox"] {
                             position: absolute;
@@ -2405,6 +2545,7 @@ nav {
                                     border: 1px solid $color-6AEDFC;
                                 }
                             }
+                        
                         }
                     }
 
@@ -2420,10 +2561,14 @@ nav {
                         transition: all 0.4s $ease-out-sine;
 
                         img, object {
-                            width: 55%;
+                            width: 100%;
                             height: fit-content;
                             display: block;
-                            margin: 16% 0 23% 0;
+                            // margin: 16% 0 23% 0;
+                            transform: translate(0, 0); 
+                            transition:transform 0.5s linear;
+                            transition-property: transform;
+
                         }
 
                         span {
@@ -2570,12 +2715,22 @@ nav {
         }
     }
 
+    .checkbox-img-block{
+        position: relative;
+        margin: 18% 0 40% 0;
+        z-index: 100;
+        &:hover{
+            img{
+                transform: translate(0, 20px); 
+            }
+           
+        }
+    }
 .circle_animation{
     position: absolute;
     top: 32%;
-    left: 5%;
-    width: 90%;
-
+    left: 0%;
+    width: 100%;
     height: 1vh;
 }
 .circle{
@@ -2587,7 +2742,22 @@ nav {
 .footer-sections {
     position: relative;
 }
-
+.footer-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    // min-height: 0vh;
+}
+.logoFooter{
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 10vh;
+    }
+}
 footer {
     display: flex;
     background: $color-313131;
@@ -2602,6 +2772,7 @@ footer {
         font-weight: normal;
         font-size: 13px;
         line-height: 16px;
+        width: 90%;
 
         @include mobile_sm {
             font-size: 7px;
@@ -2611,11 +2782,13 @@ footer {
         @include mobile_md {
             font-size: 8px;
             line-height: 10px;
+    
         }
 
         @include mobile {
             font-size: 10px;
             line-height: 12px;
+         
         }
 
         a {
@@ -2677,7 +2850,7 @@ footer {
                 }
             }
 
-            .adress {}
+        
         }
 
         .contacts {
@@ -2692,6 +2865,7 @@ footer {
                 @include mobile {
                     padding-left: 22px;
                     margin-bottom: 17px;
+                    display: n;
                 }
 
                 @include tablet {
@@ -2752,6 +2926,10 @@ footer {
                     margin-bottom: 0;
                 }
             }
+            
+            // @include mobile {
+            //     display: none;
+            // }
         }
     }
 }

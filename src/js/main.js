@@ -1,5 +1,7 @@
 var LoadContent;
 $(document).ready(function() {
+  const screenWidth = window.screen.availWidth;
+  console.log(screenWidth);
   setTimeout(function() {
     LoadContent = fetch("./content.html")
       .then(function(res) {
@@ -41,6 +43,29 @@ $(document).ready(function() {
       })
 
       .then(function() {
+        return initFullpage();
+      })
+      .then(function() {
+        initMap();
+        document
+          .querySelector(".mapboxgl-ctrl-bottom-right")
+          .parentNode.removeChild(
+            document.querySelector(".mapboxgl-ctrl-bottom-right")
+          );
+        if (screenWidth >= 992) {
+          initStatistic();
+        } else {
+          initStatisticMobile();
+        }
+
+        initAnimmation();
+        return new Promise(function(resolve, reject) {
+          setTimeout(function() {
+            resolve();
+          }, 5000);
+        });
+      })
+      .then(function() {
         $("body").removeClass("loading");
         $("header").fadeOut(500);
         setTimeout(function() {
@@ -51,25 +76,6 @@ $(document).ready(function() {
             animates[0].beginElement();
           });
         }, 2000);
-      })
-
-      .then(function() {
-        return initFullpage();
-      })
-      .then(function() {
-        initMap();
-        document
-          .querySelector(".mapboxgl-ctrl-bottom-right")
-          .parentNode.removeChild(
-            document.querySelector(".mapboxgl-ctrl-bottom-right")
-          );
-        initStatistic();
-        initAnimmation();
-        return new Promise(function(resolve, reject) {
-          setTimeout(function() {
-            resolve();
-          }, 5000);
-        });
       });
   }, 4000);
 });
@@ -81,7 +87,11 @@ $(window).bind("resize ready", function(e) {
     })
     .then(function() {
       initMap();
-      initStatistic();
+      if (screenWidth >= 992) {
+        initStatistic();
+      } else {
+        initStatisticMobile();
+      }
       initAnimmation();
       return new Promise(function(resolve, reject) {
         setTimeout(function() {

@@ -1,0 +1,18 @@
+            <svg width="137" height="79" viewBox="0 0 137 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M73.2512 59.6592C78.6453 70.5789 89.8947 78.0894 102.898 78.0894C121.15 78.0894 135.946 63.2935 135.946 45.042C135.946 26.7904 121.15 11.9946 102.898 11.9946C89.8947 11.9946 78.6453 19.5051 73.2512 30.4248" stroke="#EEEEEE" stroke-opacity="0.3"/>
+                <path stroke-dasharray="52 125" stroke-dashoffset="52" d="M73.2512 59.6592C78.6453 70.5789 89.8947 78.0894 102.898 78.0894C121.15 78.0894 135.946 63.2935 135.946 45.042C135.946 26.7904 121.15 11.9946 102.898 11.9946C89.8947 11.9946 78.6453 19.5051 73.2512 30.4248" stroke="#3202F2">
+                    <animate id="to1" attributeName="stroke-dashoffset" begin="indefinite" to="52" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                    <animate id="to2" attributeName="stroke-dashoffset" begin="indefinite" to="93.6" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                    <animate id="to3" attributeName="stroke-dashoffset" begin="indefinite" to="135.3" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                    <animate id="to4" attributeName="stroke-dashoffset" begin="indefinite" to="177" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+
+                    <animate attributeType="XML" attributeName="stroke" begin="to1.begin" to="#3202F2" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                    <animate attributeType="XML" attributeName="stroke" begin="to2.begin" to="#20D2C8" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                    <animate attributeType="XML" attributeName="stroke" begin="to3.begin" to="#F5BF00" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                    <animate attributeType="XML" attributeName="stroke" begin="to4.begin" to="#A16AFC" accumulate="sum" fill="freeze" dur="3s" repeatCount="1" calcMode="linear" />
+                </path>
+                <!-- 52 #3202F2-->
+                <!-- 76(93.6) #20D2C8-->
+                <!-- 125(135.3) #F5BF00-->
+                <!-- 177 #A16AFC-->
+            </svg>

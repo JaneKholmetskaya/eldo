@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Page Title</title>
   </head>
-
+  <script>
+    history.pushState("", document.title, window.location.pathname);
+  </script>
   <body class="loading" id="body">
     <header>
       <div class="logoLoad"><img src="./img/logo.svg" alt="" /></div>
@@ -28,7 +31,7 @@
       <div class="logo"><img src="./img/logo.svg" alt="" /></div>
       <a href="#" class="mob-menu-icon"><span></span></a>
     </div>
-    <nav>
+    <nav class="header-nav">
       <div class="nav-inner-wraper">
         <div class="logo-wrapper">
           <div class="logo">
@@ -49,40 +52,30 @@
     </nav>
 
     <div id="fullpage"></div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-      defer
-    ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.js"
-      defer
-    ></script>
+    <script type="text/javascript" src="./libs/jquery.min.js" defer></script>
+
+    <script type="text/javascript" src="./libs/easings.min.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.js"
       defer
     ></script>
 
-    <script
-      src="https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js"
-      defer
-    ></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css"
-      rel="stylesheet"
-      defer
-    />
-    <link
+    <script type="text/javascript" src="./libs/mapbox-gl.js" defer></script>
+    <link type="text/css" href="./libs/mapbox-gl.css" rel="stylesheet" defer />
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap"
       rel="stylesheet"
       defer
-    />
+    /> -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.3/roundslider.min.js"
+      type="text/javascript"
+      src="./libs/roundslider.min.js"
       defer
     ></script>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.3/roundslider.min.css"
+      type="text/css"
+      href="./libs/roundslider.min.css"
       rel="stylesheet"
       defer
     />

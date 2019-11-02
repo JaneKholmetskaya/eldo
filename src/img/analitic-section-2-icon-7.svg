@@ -1,0 +1,98 @@
+<svg id="a" width="148" height="127" viewBox="0 -13 148 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <g>
+
+        <g filter="url(#filter0_d)">
+            <mask id="c" fill="#fff">
+                <path
+                    d="M28.742 27.548a3 3 0 011.639-2.673L77.923.666A3 3 0 0180.56.625l51.644 24.274a3 3 0 011.724 2.715v63.962a3 3 0 01-1.743 2.724L80.54 118.138a3.002 3.002 0 01-2.599-.04l-47.54-23.773a3 3 0 01-1.659-2.684V27.548z" />
+            </mask>
+            <path
+                d="M28.742 27.548a3 3 0 011.639-2.673L77.923.666A3 3 0 0180.56.625l51.644 24.274a3 3 0 011.724 2.715v63.962a3 3 0 01-1.743 2.724L80.54 118.138a3.002 3.002 0 01-2.599-.04l-47.54-23.773a3 3 0 01-1.659-2.684V27.548z"
+                stroke="url(#paint0_linear)" stroke-width="4" mask="url(#c)" />
+        </g>
+        <g filter="url(#filter1_d)">
+            <mask id="d" fill="#fff">
+                <path
+                    d="M108.8 29H61.867c-.59 0-1.067.478-1.067 1.067v4.266h-9.6c-.59 0-1.067.478-1.067 1.067v52.267A5.34 5.34 0 0055.467 93h49.066a5.34 5.34 0 005.334-5.333v-57.6c0-.59-.478-1.067-1.067-1.067zm-48 58.667a3.2 3.2 0 01-3.2 3.2h-2.133a3.2 3.2 0 01-3.2-3.2v-51.2H60.8v51.2zm46.933 0a3.2 3.2 0 01-3.2 3.2H61.839a5.279 5.279 0 001.094-3.2V31.133h44.8v56.534z" />
+            </mask>
+            <path
+                d="M108.8 29H61.867c-.59 0-1.067.478-1.067 1.067v4.266h-9.6c-.59 0-1.067.478-1.067 1.067v52.267A5.34 5.34 0 0055.467 93h49.066a5.34 5.34 0 005.334-5.333v-57.6c0-.59-.478-1.067-1.067-1.067zm-48 58.667a3.2 3.2 0 01-3.2 3.2h-2.133a3.2 3.2 0 01-3.2-3.2v-51.2H60.8v51.2zm46.933 0a3.2 3.2 0 01-3.2 3.2H61.839a5.279 5.279 0 001.094-3.2V31.133h44.8v56.534z"
+                fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5" mask="url(#d)" />
+            <mask id="e" fill="#fff">
+                <path
+                    d="M71.466 72.733h28.8V70.6H96V52.467c0-.59-.478-1.067-1.067-1.067h-4.267c-.589 0-1.066.478-1.066 1.067V70.6h-1.067V58.867c0-.59-.478-1.067-1.067-1.067H83.2c-.59 0-1.067.478-1.067 1.067V70.6h-1.067v-7.467c0-.589-.477-1.066-1.066-1.066h-4.267c-.59 0-1.067.477-1.067 1.066V70.6h-2.133V48.2H70.4v23.467c0 .589.477 1.066 1.066 1.066zm20.267-19.2h2.133V70.6h-2.133V53.533zm-7.467 6.4H86.4V70.6h-2.134V59.933zM76.8 64.2h2.133v6.4H76.8v-6.4z" />
+            </mask>
+            <path
+                d="M71.466 72.733h28.8V70.6H96V52.467c0-.59-.478-1.067-1.067-1.067h-4.267c-.589 0-1.066.478-1.066 1.067V70.6h-1.067V58.867c0-.59-.478-1.067-1.067-1.067H83.2c-.59 0-1.067.478-1.067 1.067V70.6h-1.067v-7.467c0-.589-.477-1.066-1.066-1.066h-4.267c-.59 0-1.067.477-1.067 1.066V70.6h-2.133V48.2H70.4v23.467c0 .589.477 1.066 1.066 1.066zm20.267-19.2h2.133V70.6h-2.133V53.533zm-7.467 6.4H86.4V70.6h-2.134V59.933zM76.8 64.2h2.133v6.4H76.8v-6.4z"
+                fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5" mask="url(#e)" />
+            <mask id="f" fill="#fff">
+                <path d="M76.8 36.467h-4.267V38.6h4.266v-2.133z" />
+            </mask>
+            <path d="M76.8 36.467h-4.267V38.6h4.266v-2.133z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#f)" />
+            <mask id="g" fill="#fff">
+                <path d="M98.133 36.467h-19.2V38.6h19.2v-2.133z" />
+            </mask>
+            <path d="M98.133 36.467h-19.2V38.6h19.2v-2.133z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#g)" />
+            <mask id="h" fill="#fff">
+                <path d="M98.133 40.733h-25.6v2.134h25.6v-2.134z" />
+            </mask>
+            <path d="M98.133 40.733h-25.6v2.134h25.6v-2.134z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#h)" />
+            <mask id="i" fill="#fff">
+                <path d="M76.8 75.933h-4.267v2.134h4.266v-2.134z" />
+            </mask>
+            <path d="M76.8 75.933h-4.267v2.134h4.266v-2.134z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#i)" />
+            <mask id="j" fill="#fff">
+                <path d="M98.133 75.933h-19.2v2.134h19.2v-2.134z" />
+            </mask>
+            <path d="M98.133 75.933h-19.2v2.134h19.2v-2.134z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#j)" />
+            <mask id="k" fill="#fff">
+                <path d="M98.133 80.2h-25.6v2.133h25.6V80.2z" />
+            </mask>
+            <path d="M98.133 80.2h-25.6v2.133h25.6V80.2z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#k)" />
+            <mask id="l" fill="#fff">
+                <path d="M98.133 84.467h-4.266V86.6h4.266v-2.133z" />
+            </mask>
+            <path d="M98.133 84.467h-4.266V86.6h4.266v-2.133z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#l)" />
+            <mask id="m" fill="#fff">
+                <path d="M91.733 84.467h-19.2V86.6h19.2v-2.133z" />
+            </mask>
+            <path d="M91.733 84.467h-19.2V86.6h19.2v-2.133z" fill="#6AEDFC" stroke="#1E1E1E" stroke-width=".5"
+                mask="url(#m)" />
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_d" x=".484" y=".34" width="146.912" height="126.075" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter1_d" x="44" y="29" width="72" height="72" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <linearGradient id="paint0_linear" x1="133.928" y1="43.423" x2="32.322" y2="65.449"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0" />
+            <stop offset=".771" stop-color="#6AEDFC" />
+        </linearGradient>
+    </defs>
+</svg>

@@ -1,12 +1,20 @@
-<svg id="a" width="65" height="68" viewBox="0 0 65 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0.903229 48.5144C6.29736 59.4341 17.5468 66.9446 30.5504 66.9446C48.8019 66.9446 63.5977 52.1487 63.5977 33.8972C63.5977 15.6456 48.8019 0.849831 30.5504 0.849831C17.5468 0.849831 6.29736 8.36026 0.903229 19.28" stroke="#EEEEEE" stroke-opacity="0.3" />
-    <path stroke-dasharray="52 140" stroke-dashoffset="-125" d="M0.903229 48.5144C6.29736 59.4341 17.5468 66.9446 30.5504 66.9446C48.8019 66.9446 63.5977 52.1487 63.5977 33.8972C63.5977 15.6456 48.8019 0.849831 30.5504 0.849831C17.5468 0.849831 6.29736 8.36026 0.903229 19.28" stroke="#20D2C8">
-        <animate attributeName="stroke-dashoffset" begin="a.mouseenter" end="a.mouseleave" values="-125; 66" dur="2s" repeatCount="1" fill="freeze" calcMode="linear" />
-        <animate attributeName="stroke-dashoffset" begin="a.mouseleave" to="66" dur="1s" accumulate="sum" repeatCount="1" fill="freeze" calcMode="linear" />
-    </path>
-    <path d="M35.3071 33.8972L28.1717 39.0655V28.7289L35.3071 33.8972Z" stroke="#20D2C8" />
-    <path d="M35.3071 33.8972L28.1717 39.0655V28.7289L35.3071 33.8972Z" opacity="0.01" fill="#20D2C8" stroke="#20D2C8">
-            <animate attributeName="opacity" begin="a.mouseenter" end="a.mouseleave" values="0; 1" keyTimes="0; 1" dur="1s" fill="freeze" repeatCount="1" calcMode="linear" />
-            <animate attributeName="opacity" begin="a.mouseleave" to="0" dur="1s" accumulate="sum" repeatCount="1" calcMode="linear" fill="freeze" />
-    </path>
+<svg id="a" width="265" height="68" viewBox="0 0 65 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M0.903229 48.5144C6.29736 59.4341 17.5468 66.9446 30.5504 66.9446C48.8019 66.9446 63.5977 52.1487 63.5977 33.8972C63.5977 15.6456 48.8019 0.849831 30.5504 0.849831C17.5468 0.849831 6.29736 8.36026 0.903229 19.28"
+    stroke="#EEEEEE" stroke-opacity="0.3" />
+  <path stroke-dasharray="52 140" stroke-dashoffset="-125"
+    d="M0.903229 48.5144C6.29736 59.4341 17.5468 66.9446 30.5504 66.9446C48.8019 66.9446 63.5977 52.1487 63.5977 33.8972C63.5977 15.6456 48.8019 0.849831 30.5504 0.849831C17.5468 0.849831 6.29736 8.36026 0.903229 19.28"
+    stroke="#20D2C8">
+    <animate attributeName="stroke-dashoffset" begin="a.mouseenter" end="a.mouseleave" values="-125; 66" dur="2s"
+      repeatCount="1" fill="freeze" calcMode="linear" />
+    <animate attributeName="stroke-dashoffset" begin="a.mouseleave" to="66" dur="1s" accumulate="sum" repeatCount="1"
+      fill="freeze" calcMode="linear" />
+  </path>
+  <path d="M35.3071 33.8972L28.1717 39.0655V28.7289L35.3071 33.8972Z" stroke="#20D2C8" />
+  <path d="M35.3071 33.8972L28.1717 39.0655V28.7289L35.3071 33.8972Z" opacity="0.01" fill="#20D2C8" stroke="#20D2C8">
+    <animate attributeName="opacity" begin="a.mouseenter" end="a.mouseleave" values="0; 1" keyTimes="0; 1" dur="1s"
+      fill="freeze" repeatCount="1" calcMode="linear" />
+    <animate attributeName="opacity" begin="a.mouseleave" to="0" dur="1s" accumulate="sum" repeatCount="1"
+      calcMode="linear" fill="freeze" />
+  </path>
 </svg>

@@ -139,11 +139,11 @@
         scrollHorizontally: false,
         interlockedSlides: false,
         dragAndMove: false,
-        offsetSections: false,
+        offsetSections: true,
         resetSliders: false,
         fadingEffect: false,
         normalScrollElements: null,
-        scrollOverflow: true,
+        scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowHandler: window.fp_scrolloverflow
           ? window.fp_scrolloverflow.iscrollHandler
